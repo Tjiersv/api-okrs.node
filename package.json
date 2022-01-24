@@ -1,0 +1,35 @@
+{
+  "name": "okr-api",
+  "version": "1.0.0",
+  "description": "OKRs API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "npx tsc src/index.ts",
+    "dev": "tsc -w & nodemon dist/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tjiersv/okr-api.git"
+  },
+  "keywords": [
+    "okr",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Tjier Salazar Varos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tjiersv/okr-api/issues"
+  },
+  "homepage": "https://github.com/Tjiersv/okr-api#readme",
+  "dependencies": {
+    "express": "4.17.2"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.13",
+    "nodemon": "2.0.15",
+    "typescript": "4.5.5"
+  }
+}
