@@ -1,11 +1,8 @@
-import express from 'express';
+import { startServer } from './config';
+import { getLogger } from './handlers';
 
-const app = express();
+const dependencies = {
+    logger: getLogger()
+}
 
-app.get('/', (req, res) => {
-    res.send('OKR API in construction!');
-});
-
-const port = 3000;
-
-app.listen(port, () => console.log(`Server running in port: ${port}`));
+startServer(dependencies);
