@@ -1,3 +1,8 @@
-import { startServer } from "./server";
+import { startServer } from './config';
+import { getLogger } from './handlers';
 
-startServer();
+const dependencies = {
+    logger: getLogger()
+}
+
+startServer(dependencies);
