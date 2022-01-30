@@ -12,5 +12,5 @@ export const getLogger = (): log4jsHandler  => {
         warn: (str: string) => logger.warn(str),
         error: (str: string) => logger.error(str),
         fatal: (str: string) => logger.fatal(str)
-    }
-}
+    };
+};
