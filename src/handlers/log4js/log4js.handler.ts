@@ -1,8 +1,8 @@
 import log4js from 'log4js';
 
-import { log4jsHandler } from './log4js.interface';
+import { Logger } from './log4js.interface';
 
-export const getLogger = (): log4jsHandler  => {
+export const getLogger = (): Logger  => {
     const logger = log4js.getLogger();
     logger.level = process.env.LOGGERLVL || 'debug';
     return {

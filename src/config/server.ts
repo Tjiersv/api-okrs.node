@@ -1,12 +1,7 @@
 import express from 'express';
-import { log4jsHandler } from '../handlers';
+import { Logger } from '../handlers';
 
-interface startServerParams {
-    logger: log4jsHandler
-}
-
-export const startServer = (dependencies: startServerParams) => {
-    const { logger } = dependencies;
+export const start = (logger: Logger) => () => {
     try {
         logger.info('[start server]: Init Server');
         const app = express();
