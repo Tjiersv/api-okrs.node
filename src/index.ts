@@ -1,8 +1,3 @@
-import { startServer } from './config';
-import { getLogger } from './handlers';
+import start from './config';
 
-const dependencies = {
-    logger: getLogger()
-}
-
-startServer(dependencies);
+start();
