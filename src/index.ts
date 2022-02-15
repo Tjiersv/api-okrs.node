@@ -1,3 +1,3 @@
-import start from './config';
+import start from './api';
 
 start();
