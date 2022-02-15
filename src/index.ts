@@ -1,3 +1,7 @@
-import start from './api';
+import { Application } from 'express';
+import { server } from './api';
+import { getLogger } from './handlers';
 
-start();
+const logger = getLogger();
+const app: Application = server({ logger }).start();
+export default app;
